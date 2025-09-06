@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Partnership Tecnológico - La Diez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+            color: #1F2937;
+        }
+        .accent-blue { color: #3B82F6; }
+        .bg-accent-blue { background-color: #3B82F6; }
+        .border-accent-blue { border-color: #3B82F6; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .logo-autotask {
+            font-weight: 700;
+            font-size: 1.5rem; /* Ajustado para mejor alineación */
+            line-height: 1;
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased">
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <header class="text-center py-12">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-800 leading-tight">
+                Propuesta de Partnership Tecnológico
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl font-semibold accent-blue">
+                Construyendo el Motor de Datos para "La Diez"
+            </p>
+            <p class="mt-2 text-gray-500">Septiembre, 2025</p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 items-center gap-4 md:gap-8 text-center max-w-4xl mx-auto">
+                <!-- Proposers -->
+                <div class="flex justify-center md:justify-end items-center space-x-4">
+                    <img src="https://wearenubi.com/nubi-logo.svg" alt="Nubi Logo" class="h-8">
+                    <a href="https://autotasksolutions.site" target="_blank" class="logo-autotask text-gray-800 hover:text-accent-blue transition duration-300 whitespace-nowrap">
+                        <span class="accent-blue">A</span>utotask <span class="accent-blue">S</span>olutions
+                    </a>
+                </div>
+                
+                <!-- Separator -->
+                <div class="text-3xl font-thin text-gray-300">X</div>
+                
+                <!-- Client -->
+                <div class="flex justify-center md:justify-start">
+                    <div class="text-3xl font-black text-gray-700 tracking-tight">LA <span class="accent-blue">DIEZ</span></div>
+                </div>
+            </div>
+        </header>
+
+        <section class="my-16 text-center">
+             <div class="bg-white rounded-xl shadow-lg p-8 max-w-3xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Nuestra Filosofía</h2>
+                <p class="text-lg md:text-xl text-gray-600 italic">
+                    "Proponemos un camino en dos fases. Empezamos con un <strong class="accent-blue font-semibold">MVP de backend 100% funcional</strong> para resolver su necesidad inmediata, y luego escalamos juntos hacia una solución más robusta e inteligente."
+                </p>
+            </div>
+        </section>
+
+        <section id="fase1" class="my-16">
+            <div class="text-center mb-12">
+                <span class="text-sm font-bold tracking-wider uppercase text-gray-500">FASE 1</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mt-2">El Backend Funcional (MVP)</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-600">La solución completa para su necesidad más urgente, lista en tiempo récord y con una inversión clara.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800">Entregables Clave</h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-2xl mr-4">✅</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Workflow de Extracción</h4>
+                                <p class="text-gray-600 mt-1">Un flujo robusto que se conecta a la API de Ágora y realiza una limpieza inicial de datos (normalización y formato).</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-2xl mr-4">✅</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Base de Datos Segura</h4>
+                                <p class="text-gray-600 mt-1">Crearemos una base de datos PostgreSQL (vía Supabase) para almacenar la información de forma estructurada y segura.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 text-2xl mr-4">✅</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Endpoints de Consulta (API)</h4>
+                                <p class="text-gray-600 mt-1">Una API REST segura y a medida para que su frontend pueda consumir los datos.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-green-500 text-2xl mr-4">✅</span>
+                            <div>
+                                <h4 class="font-semibold text-lg">Garantía de 30 Días</h4>
+                                <p class="text-gray-600 mt-1">Soporte post-entrega para asegurar que todo funcione a la perfección.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Inversión (Fase 1)</h3>
+                         <p class="text-gray-600 mb-4">Este presupuesto cubre <strong class="font-semibold text-gray-700">exclusivamente</strong> los entregables de la Fase 1. Se divide en dos pagos para asegurar un compromiso mutuo.</p>
+                        <div class="chart-container">
+                            <canvas id="investmentChart"></canvas>
+                        </div>
+                        <div class="mt-4 text-5xl font-black text-gray-800">€200</div>
+                        <p class="text-gray-600 font-semibold">Inversión Fase 1</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Roadmap de Entrega</h3>
+                        <div class="mt-6">
+                            <div class="relative">
+                                <!-- Timeline track -->
+                                <div class="absolute left-0 top-1/2 w-full h-0.5 bg-gray-300 transform -translate-y-1/2" style="top: 10px;"></div>
+                                <div class="absolute left-0 top-1/2 w-full h-0.5 bg-accent-blue transform -translate-y-1/2" style="top: 10px;"></div>
+                                
+                                <!-- Timeline items -->
+                                <div class="relative flex justify-between">
+                                    <!-- Item 1 -->
+                                    <div class="w-1/4 text-center">
+                                        <div class="relative">
+                                            <div class="mx-auto w-5 h-5 bg-accent-blue rounded-full border-4 border-white"></div>
+                                        </div>
+                                        <p class="mt-2 text-sm font-bold">Semana 1</p>
+                                        <p class="text-xs text-gray-600">Kick-off y Set up</p>
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div class="w-1/4 text-center">
+                                        <div class="relative">
+                                            <div class="mx-auto w-5 h-5 bg-accent-blue rounded-full border-4 border-white"></div>
+                                        </div>
+                                        <p class="mt-2 text-sm font-bold">Semana 2</p>
+                                        <p class="text-xs text-gray-600">Integración Ágora API</p>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="w-1/4 text-center">
+                                        <div class="relative">
+                                            <div class="mx-auto w-5 h-5 bg-accent-blue rounded-full border-4 border-white"></div>
+                                        </div>
+                                        <p class="mt-2 text-sm font-bold">Semana 3</p>
+                                        <p class="text-xs text-gray-600">Migración de Datos</p>
+                                    </div>
+                                    <!-- Item 4 -->
+                                    <div class="w-1/4 text-center">
+                                        <div class="relative">
+                                            <div class="mx-auto w-5 h-5 bg-accent-blue rounded-full border-4 border-white"></div>
+                                        </div>
+                                        <p class="mt-2 text-sm font-bold">Semana 4</p>
+                                        <p class="text-xs text-gray-600">Endpoints y Entrega</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fase2" class="my-24">
+            <div class="max-w-3xl mx-auto border-l-4 border-accent-blue bg-blue-50 p-4 rounded-r-lg mb-12">
+                <p class="text-gray-700">
+                    <strong class="font-semibold text-gray-800">Nota Importante:</strong> La Fase 2 es una visión a futuro y no está incluida en el presupuesto actual. El objetivo es mostrar el potencial de crecimiento una vez que el MVP de la Fase 1 sea un éxito.
+                </p>
+            </div>
+            <div class="text-center mb-12">
+                 <span class="text-sm font-bold tracking-wider uppercase text-gray-500">FASE 2</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mt-2">De un MVP a un Ecosistema Inteligente</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-600">Una vez validado el MVP, este es el camino propuesto para escalar la solución y generar un valor exponencial.</p>
+            </div>
+            
+            <div class="relative flex flex-col md:flex-row justify-between items-center md:items-stretch space-y-8 md:space-y-0 md:space-x-8">
+                <div class="hidden md:block absolute top-1/3 left-0 w-full h-1 bg-gray-300 -z-10"></div>
+                <div class="hidden md:block absolute top-1/3 left-0 w-full h-1 bg-dashed -z-10" style="background: repeating-linear-gradient(90deg, #3B82F6, #3B82F6 10px, transparent 10px, transparent 20px);"></div>
+                
+                <div class="flex-1 text-center bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent-blue">
+                    <div class="text-5xl mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-2">Paso 1: Feedback y Validación</h3>
+                    <p class="text-gray-600">Analizar el feedback del cliente y los datos de uso del MVP para identificar las próximas prioridades.</p>
+                </div>
+                
+                <div class="text-4xl text-gray-400 self-center hidden md:block mx-4">→</div>
+
+                <div class="flex-1 text-center bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent-blue">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-2">Paso 2: Escalabilidad y Automatización</h3>
+                    <p class="text-gray-600">Escalar la infraestructura y construir nuevas automatizaciones a medida (ej: alertas de stock, reportes automáticos).</p>
+                </div>
+
+                <div class="text-4xl text-gray-400 self-center hidden md:block mx-4">→</div>
+
+                <div class="flex-1 text-center bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent-blue">
+                    <div class="text-5xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold mb-2">Paso 3: La Capa de Inteligencia (IA)</h3>
+                    <p class="text-gray-600">Introducir módulos de IA para potenciar la solución (ej: modelos predictivos de stock, chatbot de consulta de datos).</p>
+                </div>
+            </div>
+            <p class="text-center mt-12 text-gray-600 italic">El alcance y la inversión para la Fase 2 los definiremos juntos, como socios, una vez que la Fase 1 sea un éxito.</p>
+        </section>
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctx = document.getElementById('investmentChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Seña Inicial (€100)', 'Pago Final (€100)'],
+                    datasets: [{
+                        label: 'Inversión MVP',
+                        data: [100, 100],
+                        backgroundColor: [
+                            '#3B82F6',
+                            '#93C5FD'
+                        ],
+                        borderColor: '#FFFFFF',
+                        borderWidth: 4,
+                        hoverOffset: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                font: {
+                                    size: 14,
+                                    family: 'Inter'
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: function(tooltipItems) {
+                                    const item = tooltipItems[0];
+                                    let label = item.chart.data.labels[item.dataIndex];
+                                    if (Array.isArray(label)) {
+                                      return label.join(' ');
+                                    } else {
+                                      return label;
+                                    }
+                                }
+                            },
+                            padding: 12,
+                            titleFont: { size: 16, weight: 'bold', family: 'Inter' },
+                            bodyFont: { size: 14, family: 'Inter' },
+                            cornerRadius: 8,
+                            displayColors: false
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
